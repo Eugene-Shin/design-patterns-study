@@ -7,9 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IDCardFactory extends Factory {
-    public IDCardFactory() {
-        database = new ArrayList<>();
-    }
 
     @Override
     protected Product createProduct(String owner, String serialNumber) {

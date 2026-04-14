@@ -1,9 +1,10 @@
 package org.designpatterns.factorymethod.framework;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Factory {
-    protected List<Product> database;
+    protected List<Product> database = new ArrayList<>();
 
     public final Product create(String owner, String serialNumber) {
         Product p = createProduct(owner, serialNumber);
