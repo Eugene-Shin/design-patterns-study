@@ -1,12 +1,16 @@
 package org.designpatterns.factorymethod.framework;
 
+import java.util.List;
+
 public abstract class Factory {
-    public final Product create(String owner) {
-        Product p = createProduct(owner);
+    protected List<Product> database;
+
+    public final Product create(String owner, String serialNumber) {
+        Product p = createProduct(owner, serialNumber);
         registerProduct(p);
         return p;
     }
 
-    protected abstract Product createProduct(String owner);
+    protected abstract Product createProduct(String owner, String serialNumber);
     protected abstract void registerProduct(Product product);
 }
