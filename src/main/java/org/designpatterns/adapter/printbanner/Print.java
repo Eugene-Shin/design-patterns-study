@@ -1,4 +1,4 @@
-package org.designpatterns.adapter;
+package org.designpatterns.adapter.printbanner;
 
 public interface Print {
     public abstract void printWeak();

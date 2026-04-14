@@ -1,4 +1,4 @@
-package org.designpatterns.adapter;
+package org.designpatterns.adapter.fileproperties;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

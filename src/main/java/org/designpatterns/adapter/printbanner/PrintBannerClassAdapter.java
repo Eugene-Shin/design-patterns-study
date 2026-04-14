@@ -1,4 +1,4 @@
-package org.designpatterns.adapter;
+package org.designpatterns.adapter.printbanner;
 
 public class PrintBannerClassAdapter extends Banner implements Print {
     public PrintBannerClassAdapter(String string) {
