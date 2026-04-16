@@ -13,13 +13,11 @@ public class Triple {
     }
 
     public static Triple getInstance(String name) {
-        if("ALPHA".equals(name)) {
-            return alpha;
-        } else if("BETA".equals(name)) {
-            return beta;
-        } else if("GAMMA".equals(name)){
-            return gamma;
-        }
-        throw new NoSuchElementException();
+        return switch(name) {
+            case "ALPHA" -> alpha;
+            case "BETA" -> beta;
+            case "GAMMA" -> gamma;
+            default -> throw new NoSuchElementException("Unknown name: " + name);
+        };
     }
 }
